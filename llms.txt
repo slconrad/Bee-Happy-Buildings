@@ -1,0 +1,40 @@
+# Bee Happy Building Systems
+
+> [PLACEHOLDER — DRAFT, NOT FINAL] Bee Happy Building Systems is a custom metal
+> building contractor based in Arp, Texas, serving Tyler, Longview, and the
+> greater East Texas region. This file is a draft generated with placeholder
+> copy and must be reviewed, fact-checked, and finalized before shipment.
+
+Bee Happy Building Systems designs and constructs barndominiums, steel
+workshops, agricultural barns, detached garages, commercial steel buildings,
+and RV/boat covers, using US-made steel. [PLACEHOLDER: expand with finalized
+brand voice, verified differentiators, and confirmed business facts —
+founding year, licensing/bonding details, certifications — before shipping.]
+
+## Company
+
+- Name: Bee Happy Building Systems
+- Address: 13368 CR 2290, Arp, TX 75750
+- Service Area: Tyler, Longview, and East Texas
+- Phone: (903) 555-0123 [PLACEHOLDER — confirm real number]
+- Email: info@beehappybuildings.com [PLACEHOLDER — confirm]
+
+## Services
+
+- Custom Barndominiums: [PLACEHOLDER — expand with finalized service description]
+- Steel Workshops: [PLACEHOLDER — expand with finalized service description]
+- Agricultural Barns: [PLACEHOLDER — expand with finalized service description]
+- Detached Garages: [PLACEHOLDER — expand with finalized service description]
+- Commercial Steel Buildings: [PLACEHOLDER — expand with finalized service description]
+- RV & Boat Covers: [PLACEHOLDER — expand with finalized service description]
+
+## Pages
+
+- [Home](https://beehappybuildings.com/): Company overview, services, gallery, FAQ, and quote request form.
+
+## Notes
+
+This is a DRAFT llms.txt file containing placeholder text (see [PLACEHOLDER]
+markers above). Do not treat any figure, claim, or contact detail in this
+file as accurate until it has been reviewed and approved. See SITE-NOTES.md
+in the project root for the full pre-shipment checklist.
