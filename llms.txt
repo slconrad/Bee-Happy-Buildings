@@ -1,40 +1,80 @@
 # Bee Happy Building Systems
 
-> [PLACEHOLDER — DRAFT, NOT FINAL] Bee Happy Building Systems is a custom metal
-> building contractor based in Arp, Texas, serving Tyler, Longview, and the
-> greater East Texas region. This file is a draft generated with placeholder
-> copy and must be reviewed, fact-checked, and finalized before shipment.
+> Bee Happy Building Systems is a family owned and operated metal building
+> contractor based in the Tyler/Arp, Texas area, serving Tyler, Longview, and
+> the greater East Texas region. The company designs and constructs
+> barndominiums, steel workshops, agricultural barns, detached garages,
+> commercial steel buildings, and RV/boat covers using 100% US-made steel,
+> and is fully insured and bonded with 20+ years of experience.
 
-Bee Happy Building Systems designs and constructs barndominiums, steel
-workshops, agricultural barns, detached garages, commercial steel buildings,
-and RV/boat covers, using US-made steel. [PLACEHOLDER: expand with finalized
-brand voice, verified differentiators, and confirmed business facts —
-founding year, licensing/bonding details, certifications — before shipping.]
+Bee Happy Building Systems builds on three engineered systems, matched to a
+client's budget and timeline: red iron steel (heavy-gauge structural steel
+spanning wide clear areas with zero interior support columns), hybrid steel
+frame (steel columns paired with wood framing for a cost-effective, fully
+engineered build), and post frame construction (embedded posts for a fast,
+budget-friendly build ideal for barns and shops). [PLACEHOLDER: confirm
+founding year, licensing/bonding registration details, and any
+certifications before final shipment.]
 
 ## Company
 
 - Name: Bee Happy Building Systems
+- Ownership: Family owned and operated
 - Address: 13368 CR 2290, Arp, TX 75750
 - Service Area: Tyler, Longview, and East Texas
-- Phone: (903) 555-0123 [PLACEHOLDER — confirm real number]
+- Experience: 20+ years
+- Materials: 100% US-made steel
+- Insurance/Bonding: Fully insured and bonded
+- Phone: (903) 522-1565
 - Email: info@beehappybuildings.com [PLACEHOLDER — confirm]
+- Facebook: https://www.facebook.com/beehappybuildingsystemsllc/
+- Also on: Instagram, TikTok, YouTube [PLACEHOLDER — confirm handles/URLs]
+- Google Rating: 5.0 stars (11 reviews) — https://share.google/dXk91VAHvaDZv2iZF
 
 ## Services
 
-- Custom Barndominiums: [PLACEHOLDER — expand with finalized service description]
-- Steel Workshops: [PLACEHOLDER — expand with finalized service description]
-- Agricultural Barns: [PLACEHOLDER — expand with finalized service description]
-- Detached Garages: [PLACEHOLDER — expand with finalized service description]
-- Commercial Steel Buildings: [PLACEHOLDER — expand with finalized service description]
-- RV & Boat Covers: [PLACEHOLDER — expand with finalized service description]
+- [Custom Barndominiums](https://beehappybuildings.com/#barndominiums): High-grade steel frames with luxury interiors — energy-efficient, open-concept living at a fraction of the cost of traditional builds.
+- [Steel Workshops](https://beehappybuildings.com/#steel-workshops): Metal workshops and hobby shops engineered to withstand Texas winds, with secure, clear-span space for any project.
+- [Agricultural Barns](https://beehappybuildings.com/#agricultural-barns): Heavy-duty metal farm buildings for livestock, hay storage, and equipment, built with rust-resistant steel.
+- [Detached Garages](https://beehappybuildings.com/#detached-garages): Premium metal garage construction with reinforced steel siding, ideal for vehicle storage, home gyms, or man-caves, with custom roll-up door options.
+- [Commercial Steel Buildings](https://beehappybuildings.com/#commercial-steel): Scalable industrial metal buildings for retail, office space, or manufacturing, with rapid turn-key construction.
+- [RV & Boat Covers](https://beehappybuildings.com/#rv-boat-covers): Custom steel RV carports and boat covers engineered for maximum clearance and protection against sun and hail damage.
+
+## Materials & Construction Systems
+
+- Red Iron Steel: Heavy-gauge structural steel that spans wide clear areas with zero interior support columns. The standard for barndominiums and shops.
+- Hybrid Steel Frame: Steel columns paired with wood framing for a cost-effective, fully engineered build.
+- Post Frame Construction: Embedded posts deliver a fast, budget-friendly, fully engineered build, ideal for barns and shops.
+
+## FAQ Topics
+
+The site's FAQ section (https://beehappybuildings.com/#faq) covers, in detail:
+
+- Red Iron, Hybrid Steel & Post Frame — What's the Difference?
+- Why the right roofing fastener (screw) matters, and which fasteners are used
+- How roof color affects heat and energy costs, and the science of "cool roof" coatings
+- Signature 200 vs. Signature 300 roof coatings — how to choose
+- What to look for in a budget-friendly window, and how budget window brands (RELIABILT, Ply Gem, Elevate, Simonton) compare
+- Premium window frame materials (fiberglass, Fibrex composite, clad-wood, solid wood) and how premium brands (Pella, Andersen, Marvin) compare for East Texas heat
 
 ## Pages
 
-- [Home](https://beehappybuildings.com/): Company overview, services, gallery, FAQ, and quote request form.
+- [Home](https://beehappybuildings.com/): Company overview, services, gallery preview, FAQ, and quote request form.
+- [Gallery](https://beehappybuildings.com/gallery/): Photos of completed projects, organized into Barndos and Sheds.
+- [Blog](https://beehappybuildings.com/blog/): Buyer's guides on construction systems, fasteners, roof coatings, and windows.
+- [Red Iron, Hybrid Steel & Post Frame: Choosing Your Construction Process](https://beehappybuildings.com/blog/construction-process.html): How the three construction systems Bee Happy builds on compare, and how to choose.
+- [Metal Roof & Building Fasteners: A Straight-Talk Guide](https://beehappybuildings.com/blog/fastener-guide.html): The four roofing/building fasteners Bee Happy installs, what each is for, and why fastener choice affects roof lifespan.
+- [Beat the Texas Heat: A Guide to Metal Roof Color & Coatings](https://beehappybuildings.com/blog/roof-color-coatings-guide.html): How roof color and coating (Signature 200 SMP vs. Signature 300 PVDF, and bare Galvalume) affect heat gain and energy costs in East Texas.
+- [Premium Windows Compared: Pella vs. Andersen vs. Marvin](https://beehappybuildings.com/blog/premium-windows-guide.html): Materials, finishes, pricing, and warranty comparison of premium window brands for East Texas heat.
+- [Budget & In-Stock Windows Compared](https://beehappybuildings.com/blog/budget-windows-guide.html): How RELIABILT, Ply Gem, Elevate, and Simonton budget vinyl windows compare on U-Factor, SHGC, DP rating, and warranty.
 
 ## Notes
 
-This is a DRAFT llms.txt file containing placeholder text (see [PLACEHOLDER]
-markers above). Do not treat any figure, claim, or contact detail in this
-file as accurate until it has been reviewed and approved. See SITE-NOTES.md
-in the project root for the full pre-shipment checklist.
+Structured data (Organization, FAQPage, BreadcrumbList, WebSite) is also
+published in JSON-LD on the homepage — this file is a plain-text companion
+for LLM/AI-answer-engine crawlers per the llms.txt convention
+(llmstxt.org), not a replacement for it. The phone number was confirmed
+from the client's own Mission Statement doc on 2026-08-24. One fact is
+still marked [PLACEHOLDER] pending client confirmation: the email address
+(see SITE-NOTES.md). All other facts above are drawn from live, published
+site content or the client's official company docs.

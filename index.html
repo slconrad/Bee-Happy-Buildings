@@ -28,9 +28,10 @@
     <meta name="apple-mobile-web-app-title" content="Bee Happy Buildings">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" href="assets/favicons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     
     <!-- Open Graph / Facebook -->
@@ -68,7 +69,7 @@
         "height": 60
       },
       "url": "https://beehappybuildings.com/",
-      "telephone": "+1-903-555-0123",
+      "telephone": "+1-903-522-1565",
       "email": "info@beehappybuildings.com",
       "address": {
         "@type": "PostalAddress",
@@ -108,9 +109,8 @@
       "priceRange": "$$",
       "description": "Custom metal building construction in East Texas. Specializing in barndominiums, steel shops, and agricultural barns.",
       "sameAs": [
-        "https://www.facebook.com/beehappybuildings",
-        "https://www.instagram.com/beehappybuildings",
-        "https://www.linkedin.com/company/beehappybuildings"
+        "https://www.facebook.com/beehappybuildingsystemsllc/",
+        "https://share.google/dXk91VAHvaDZv2iZF"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -152,8 +152,9 @@
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "47"
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "reviewCount": "11"
       }
     }
     </script>
@@ -306,7 +307,7 @@
 </head>
 <body>
 
-    <nav>
+    <nav id="site-nav">
         <div class="logo">
             <a href="#top">
                 <img src="assets/images/company-logo.png" alt="Bee Happy Building Systems">
@@ -318,7 +319,8 @@
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="gallery/index.html">Gallery</a></li>
+            <li><a href="blog/index.html">Blog</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact" class="cta-btn">Get a Quote</a></li>
         </ul>
@@ -337,84 +339,37 @@
         </div>
     </header>
 
-    <!-- ================================================================
-         AI / LLM-OPTIMIZED OVERVIEW SECTION — DRAFT / PLACEHOLDER CONTENT
-         TODO: Replace all [PLACEHOLDER] copy below with reviewed, accurate
-         business copy before final shipment. See SITE-NOTES.md for the
-         checklist. This section exists to give AI search/answer engines
-         (ChatGPT, Perplexity, Google AI Overviews, etc.) a dense, factual,
-         semantically-tagged summary they can extract and cite directly.
-         ================================================================ -->
-    <section id="overview" class="overview">
-        <article class="overview-article">
-            <header class="overview-header">
-                <h2>At A Glance <span>Bee Happy Building Systems</span></h2>
-                <p>[PLACEHOLDER] Bee Happy Building Systems is a custom metal building contractor based in Arp, Texas, serving Tyler, Longview, and the surrounding East Texas region. We design and construct barndominiums, steel workshops, agricultural barns, detached garages, commercial buildings, and RV/boat covers using US-made steel. This summary is draft placeholder copy and must be reviewed and finalized before the site ships.</p>
-            </header>
-            <section class="overview-facts" aria-label="Company facts">
-                <h3>Company Facts</h3>
-                <dl>
-                    <div class="fact">
-                        <dt>Company</dt>
-                        <dd>Bee Happy Building Systems</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Headquarters</dt>
-                        <dd>13368 CR 2290, Arp, TX 75750</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Service Area</dt>
-                        <dd>Tyler, Longview & East Texas</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Core Services</dt>
-                        <dd>Barndominiums, Steel Shops, Agricultural Barns, Garages, Commercial Buildings, RV/Boat Covers</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Experience</dt>
-                        <dd>[PLACEHOLDER] 20+ Years</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Materials</dt>
-                        <dd>100% US-Made Steel</dd>
-                    </div>
-                </dl>
-            </section>
-        </article>
-    </section>
-    <div class="section-divider" aria-hidden="true"><span></span></div>
-
     <section id="services" class="services">
         <div class="section-title">
             <h2>What We <span>Build</span></h2>
         </div>
         <div class="card-grid">
-            <article class="card">
+            <article class="card" id="barndominiums">
                 <i class="fas fa-home"></i>
                 <h3>Custom Barndominiums</h3>
                 <p>Combining high-grade steel frames with luxury interiors. Our <strong>East Texas barndominiums</strong> offer energy-efficient, open-concept living at a fraction of the cost of traditional builds.</p>
             </article>
-            <article class="card">
+            <article class="card" id="steel-workshops">
                 <i class="fas fa-warehouse"></i>
                 <h3>Steel Workshops</h3>
                 <p>Expertly engineered <strong>metal workshops and hobby shops</strong>. Built to withstand Texas winds, our steel structures provide secure, clear-span space for any project.</p>
             </article>
-            <article class="card">
+            <article class="card" id="agricultural-barns">
                 <i class="fas fa-tractor"></i>
                 <h3>Agricultural Barns</h3>
                 <p>Heavy-duty <strong>metal farm buildings</strong> designed for livestock, hay storage, and equipment. Our rust-resistant steel barns are the backbone of East Texas agriculture.</p>
             </article>
-            <article class="card">
+            <article class="card" id="detached-garages">
                 <i class="fas fa-car"></i>
                 <h3>Detached Garages</h3>
                 <p>Premium <strong>metal garage construction</strong> featuring reinforced steel siding. Ideal for vehicle storage, home gyms, or man-caves with custom roll-up door options.</p>
             </article>
-            <article class="card">
+            <article class="card" id="commercial-steel">
                 <i class="fas fa-store"></i>
                 <h3>Commercial Steel</h3>
                 <p>Scalable <strong>industrial metal buildings</strong> for retail, office space, or manufacturing. Rapid turn-key construction services to get your business up and running faster.</p>
             </article>
-            <article class="card">
+            <article class="card" id="rv-boat-covers">
                 <i class="fas fa-caravan"></i>
                 <h3>RV & Boat Covers</h3>
                 <p>Protect your investments with custom <strong>steel RV carports</strong> and boat covers. Engineered for maximum clearance and superior protection against sun and hail damage.</p>
@@ -423,16 +378,51 @@
     </section>
     <div class="section-divider" aria-hidden="true"><span></span></div>
 
+    <section id="gallery" class="gallery-section">
+        <div class="section-title">
+            <h2>Our <span>Barndos & Sheds</span></h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item g-wide" onclick="openLightbox(this)">
+                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-3.jpg" alt="Large Metal Building">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-1.jpg" alt="Detail Shot">
+            </div>
+            <div class="gallery-item g-tall" onclick="openLightbox(this)">
+                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-2.jpg" alt="Vertical Construction">
+            </div>
+            <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-11.jpg" alt="Steel Beams">
+            </div>
+            <div class="gallery-item g-wide" onclick="openLightbox(this)">
+                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-19.jpg" alt="Wide Exterior">
+            </div>
+        </div>
+        <a href="gallery/index.html" class="btn-outline gallery-teaser__cta">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+    </section>
+    <div class="section-divider" aria-hidden="true"><span></span></div>
+
     <section id="about" class="about">
         <div class="about-text">
-            <h2>Building <span style="color:var(--primary)">East Texas</span></h2>
-            <p>At Bee Happy Buildings, we don't just weld steel; we forge relationships. Based right here in the heart of East Texas, we understand the unique soil, weather, and needs of our community.</p>
-            <p>From the piney woods of Tyler to the oil fields of Longview, our commitment to excellence is unshakeable. We use only US-made steel and offer a lifetime warranty on our frames.</p>
+            <h2>Family Owned. <span style="color:var(--primary)">Texas Built.</span></h2>
+            <p>Bee Happy Building Systems is a family owned and operated company based in Tyler, TX, with 20+ years of experience turning barndominium and steel building dreams into reality across Tyler, Longview, and East Texas.</p>
+            <p>We're with you from design to finish, approaching every project as craftsmen — combining precision, purpose, and quality workmanship that stands the test of time. We stand behind our work, because our reputation is built one satisfied client at a time.</p>
             <ul>
-                <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i> Fully Insured & Bonded</li>
+                <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i> Family Owned & Operated</li>
                 <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i> 20+ Years Experience</li>
+                <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i> Fully Insured & Bonded</li>
                 <li><i class="fas fa-check" style="color:var(--primary); margin-right:10px;"></i> Turn-key Concrete & Erection</li>
             </ul>
+            <div class="about-cta-row">
+                <a href="blog/index.html" class="btn-outline">Check out our methods <i class="fas fa-arrow-right"></i></a>
+                <a href="https://share.google/dXk91VAHvaDZv2iZF" target="_blank" rel="noopener" class="google-rating" aria-label="Rated 5 stars from 11 reviews on Google — read our reviews">
+                    <span class="google-rating__stars" aria-hidden="true">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </span>
+                    <span class="google-rating__text">5.0 &middot; 11 Google Reviews</span>
+                </a>
+            </div>
         </div>
         <div class="about-image"></div>
     </section>
@@ -443,6 +433,7 @@
         
         <div class="about-text">
             <h2>Why Choose <span style="color:var(--primary)">Bee Happy?</span></h2>
+            <p class="mission-quote">&ldquo;Our mission is to always deliver the best job possible with a Bee Happy attitude.&rdquo;</p>
             <p>Choosing Bee Happy Building Systems means opting for peace of mind. We specialize in precision-engineered steel kits that drastically reduce construction time compared to traditional lumber builds.</p>
             <p>Our structures are built to withstand the humidity and volatile weather of East Texas, featuring anti-corrosion coatings and superior structural integrity that keeps your assets safe for decades.</p>
             <ul>
@@ -466,12 +457,68 @@
         </div>
         <div class="about-image" style="background-image: url('assets/images/Bee Happy Building Systems Steel Building-9.jpg'); background-size: cover; background-position: center;"></div>
     </section>
+    <div class="section-divider" aria-hidden="true"><span></span></div>
+
+    <section id="process" class="process">
+        <div class="section-title">
+            <h2>Our <span>Process</span></h2>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">
+                    <svg class="step-circle" viewBox="0 0 60 60" aria-hidden="true">
+                        <circle class="step-circle__track" cx="30" cy="30" r="27"></circle>
+                        <circle class="step-circle__progress" cx="30" cy="30" r="27"></circle>
+                    </svg>
+                    <span class="step-number__text">01</span>
+                </div>
+                <h3>Design & Consultation</h3>
+                <p>We start with a conversation about your land, budget, and vision, then help finalize your floor plan, dimensions, and finishes before a single beam goes up.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">
+                    <svg class="step-circle" viewBox="0 0 60 60" aria-hidden="true">
+                        <circle class="step-circle__track" cx="30" cy="30" r="27"></circle>
+                        <circle class="step-circle__progress" cx="30" cy="30" r="27"></circle>
+                    </svg>
+                    <span class="step-number__text">02</span>
+                </div>
+                <h3>Engineering & Permitting</h3>
+                <p>Every building is designed to Texas wind and structural codes with engineer-stamped plans, and we help you navigate local permitting.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">
+                    <svg class="step-circle" viewBox="0 0 60 60" aria-hidden="true">
+                        <circle class="step-circle__track" cx="30" cy="30" r="27"></circle>
+                        <circle class="step-circle__progress" cx="30" cy="30" r="27"></circle>
+                    </svg>
+                    <span class="step-number__text">03</span>
+                </div>
+                <h3>Site Prep & Foundation</h3>
+                <p>Turn-key concrete and site work, graded and poured to spec, so your foundation is ready to carry your building for decades.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">
+                    <svg class="step-circle" viewBox="0 0 60 60" aria-hidden="true">
+                        <circle class="step-circle__track" cx="30" cy="30" r="27"></circle>
+                        <circle class="step-circle__progress" cx="30" cy="30" r="27"></circle>
+                    </svg>
+                    <span class="step-number__text">04</span>
+                </div>
+                <h3>Construction & Turn-Key Finish</h3>
+                <p>Our crews erect the frame, install panels and trim, and complete your finish-out, then walk the finished building with you.</p>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider" aria-hidden="true"><span></span></div>
 
     <section id="faq" class="faq">
         <div class="section-title">
             <h2>FAQ - What You <span>Need to Know</span></h2>
         </div>
+        <div class="accordion-grid">
         <div class="accordion">
+            <h3 class="accordion-column-label">Construction & Roofing</h3>
             <article class="accordion-item">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>Red Iron, Hybrid Steel & Post Frame — What's the Difference?</span>
@@ -535,6 +582,9 @@
                     <p>Going light or white, Signature 200 is a smart, money-saving choice. Going dark, or want it to look new in 30 years, Signature 300 PVDF is worth the investment. Roof color and coating are only part of the equation — proper ventilation and insulation work together with the roof to manage heat.</p>
                 </div>
             </article>
+        </div>
+        <div class="accordion">
+            <h3 class="accordion-column-label">Windows</h3>
             <article class="accordion-item">
                 <button class="accordion-header" onclick="toggleAccordion(this)">
                     <span>What Should I Look for in a Budget-Friendly Window?</span>
@@ -581,86 +631,22 @@
                 </div>
             </article>
         </div>
+        </div>
     </section>
     <div class="section-divider" aria-hidden="true"><span></span></div>
 
-    <section id="gallery" class="gallery-section">
+    <section id="featured-video" class="video-feature">
         <div class="section-title">
-            <h2>Our <span>Barndos</span></h2>
+            <h2>Custom Build <span>Featured on The Barndo Network</span></h2>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-3.jpg" alt="Large Metal Building">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-1.jpg" alt="Detail Shot">
-            </div>
-            <div class="gallery-item g-tall" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-2.jpg" alt="Vertical Construction">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-11.jpg" alt="Steel Beams">
-            </div>
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-19.jpg" alt="Wide Exterior">
-            </div>
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-4.jpg" alt="Large Metal Building">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-1.jpg" alt="Detail Shot">
-            </div>
-            <div class="gallery-item g-tall" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-2.jpg" alt="Vertical Construction">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-11.jpg" alt="Steel Beams">
-            </div>
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-19.jpg" alt="Wide Exterior">
+        <div class="video-wrapper">
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/GMv8cXg60aI?si=lsN0KSe8Jl_taYnb" title="Bee Happy Building Systems Featured on The Barndo Network" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </section>
     <div class="section-divider" aria-hidden="true"><span></span></div>
 
-    <section id="gallery-2" class="gallery-section">
-        <div class="section-title">
-            <h2>Our <span>Metal Building</span></h2>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-5.jpg" alt="Large Metal Building">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-11.jpg" alt="Detail Shot">
-            </div>
-            <div class="gallery-item g-tall" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-2.jpg" alt="Vertical Construction">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-11.jpg" alt="Steel Beams">
-            </div>
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-19.jpg" alt="Wide Exterior">
-            </div>
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-6.jpg" alt="Large Metal Building">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-1.jpg" alt="Detail Shot">
-            </div>
-            <div class="gallery-item g-tall" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-2.jpg" alt="Vertical Construction">
-            </div>
-            <div class="gallery-item" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-11.jpg" alt="Steel Beams">
-            </div>
-            <div class="gallery-item g-wide" onclick="openLightbox(this)">
-                <img src="assets/images/Bee%20Happy%20Building%20Systems%20Steel%20Building-19.jpg" alt="Wide Exterior">
-            </div>
-        </div>
-    </section>
-    <div class="section-divider" aria-hidden="true"><span></span></div>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
         <span class="close-lightbox">&times;</span>
@@ -728,24 +714,59 @@
     <div class="section-divider" aria-hidden="true"><span></span></div>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <h4>Bee Happy Buildings</h4>
-                <p>13368 CR 2290<br>Arp, Tx 75750</p>
-                <br>
-                <p><i class="fas fa-phone-alt"></i> (903) 555-0123</p>
-            </div>
-            <div class="footer-col">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="footer-grid">
+            <div class="footer-col footer-brand">
+                <div class="footer-wordmark">Bee Happy <span>Building Systems</span></div>
+                <p>Family owned and operated metal building contractor serving Tyler, Longview, and East Texas. Barndominiums, steel shops, and agricultural buildings, built to last.</p>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i>13368 CR 2290, Arp, TX 75750</p>
+                    <p><i class="fas fa-phone-alt"></i><a href="tel:+19035221565">(903) 522-1565</a></p>
                 </div>
             </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#barndominiums">Custom Barndominiums</a></li>
+                    <li><a href="#steel-workshops">Steel Workshops</a></li>
+                    <li><a href="#agricultural-barns">Agricultural Barns</a></li>
+                    <li><a href="#detached-garages">Detached Garages</a></li>
+                    <li><a href="#commercial-steel">Commercial Steel</a></li>
+                    <li><a href="#rv-boat-covers">RV & Boat Covers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Guides</h4>
+                <ul>
+                    <li><a href="blog/index.html">All Guides</a></li>
+                    <li><a href="blog/construction-process.html">Construction Process</a></li>
+                    <li><a href="blog/fastener-guide.html">Fastener Guide</a></li>
+                    <li><a href="blog/roof-color-coatings-guide.html">Roof Color & Coatings</a></li>
+                    <li><a href="blog/premium-windows-guide.html">Premium Windows</a></li>
+                    <li><a href="blog/budget-windows-guide.html">Budget Windows</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="gallery/index.html">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Get a Quote</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2026 BeeHappy Building Systems. All rights reserved.</p>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bee Happy Building Systems. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/beehappybuildingsystemsllc/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
 
@@ -768,6 +789,46 @@ navLinks.forEach(link => {
         }
     });
 });
+
+// Shrink the fixed nav slightly once the page has scrolled a bit
+(function () {
+    const siteNav = document.getElementById('site-nav');
+    if (!siteNav) return;
+    let ticking = false;
+    function updateNavState() {
+        siteNav.classList.toggle('nav-scrolled', window.scrollY > 50);
+        ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateNavState);
+            ticking = true;
+        }
+    }, { passive: true });
+    updateNavState();
+})();
+
+// "Our Process" step circles draw themselves in once scrolled into view
+(function () {
+    const steps = document.querySelectorAll('.process-step');
+    if (!steps.length) return;
+
+    if (!('IntersectionObserver' in window)) {
+        steps.forEach(step => step.classList.add('in-view'));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.4 });
+
+    steps.forEach(step => observer.observe(step));
+})();
 
 // FAQ Accordion Functions
 function toggleAccordion(header) {

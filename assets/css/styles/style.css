@@ -1,7 +1,7 @@
 /* --- RESET & VARIABLES --- */
 :root {
     --primary: #FFD700; /* Rust Orange */
-    --dark: #1a1a1a;
+    --dark: #1b1b1b;
     --darker: #111111;
     --light: #f4f4f4;
     --gray: #333333;
@@ -12,6 +12,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Keeps anchor targets (nav links, footer links) clear of the fixed nav
+   instead of scrolling right underneath it. */
+html {
+    scroll-padding-top: 130px;
 }
 
 body {
@@ -42,8 +48,14 @@ ul { list-style: none; }
 
 /* Optional: Logo hover effect */
 .logo img:hover {
-    transform: scale(1.00);
     filter: drop-shadow(0 0 2px var(--primary));
+}
+
+/* Shrinks smoothly on scroll (see .nav-scrolled below) — transform rather
+   than width/height so it doesn't fight the mobile width:150px override. */
+.logo img {
+    transition: transform 0.3s ease;
+    transform-origin: left center;
 }
 /* --- MOBILE LOGO SHRINK --- */
 @media (max-width: 768px) {
@@ -69,6 +81,20 @@ nav {
     top: 0;
     z-index: 1000;
     border-bottom: 2px solid var(--primary);
+    transition: padding 0.3s ease;
+}
+
+/* --- SHRINKING NAV ON SCROLL --- */
+/* `.nav-scrolled` is toggled by JS once the page scrolls past ~50px (see the
+   inline script at the bottom of each page). Specificity (element+class)
+   beats the mobile media query's plain `nav{padding:10px 5%}` above, so this
+   applies consistently on both desktop and mobile without extra overrides. */
+nav.nav-scrolled {
+    padding: 2px 5%;
+}
+
+nav.nav-scrolled .logo img {
+    transform: scale(0.82);
 }
 
 .logo {
@@ -110,8 +136,91 @@ nav {
 }
 /* .cta-btn:hover { background: #fff; color: var(--primary); } */
 
+/* --- SECONDARY (OUTLINE) BUTTON --- */
+/* Smaller, lower-emphasis than .cta-btn — for in-copy links like
+   "Check Out Our Methods" rather than primary lead-gen CTAs. */
+/* Wraps the outline button + Google rating badge on one line so adding the
+   rating doesn't add extra vertical space to the section. */
+.about-cta-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    color: var(--primary);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.btn-outline i { font-size: 0.75rem; transition: var(--transition); }
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: #000;
+}
+
+/* Google rating badge (5 stars + link to the Business Profile) */
+.google-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #ccc;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.google-rating__stars { color: var(--primary); font-size: 0.8rem; letter-spacing: 2px; }
+
+.google-rating__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.google-rating:hover { color: var(--primary); }
+
 /* Mobile Menu */
 .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
+
+/* --- BREADCRUMB (dark-theme pages, e.g. /gallery/) --- */
+/* style.css's bare `nav {}` rule (fixed header) matches every <nav>
+   element, including this one — reset the fixed-header-only properties so
+   it lays out normally in the flow instead of stacking on the real nav. */
+.breadcrumb {
+    position: static;
+    top: auto;
+    width: auto;
+    z-index: auto;
+    background: none;
+    border-bottom: none;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 5% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.breadcrumb a { color: var(--primary); }
+.breadcrumb a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+    .breadcrumb { padding-top: 110px; }
+}
 
 /* --- SECTION DIVIDER FLOURISH --- */
 .section-divider {
@@ -192,78 +301,6 @@ nav {
     margin-bottom: 30px;
 }
 
-/* --- AI/LLM OVERVIEW SECTION --- */
-.overview {
-    padding: 45px 5% 55px;
-    background: var(--darker);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.overview-article {
-    width: 100%;
-    max-width: 900px;
-}
-
-.overview-header h2 {
-    font-size: 1.7rem;
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.overview-header h2 span { color: var(--primary); }
-
-.overview-header p {
-    color: #ccc;
-    text-align: center;
-    max-width: 700px;
-    font-size: 0.95rem;
-    margin: 0 auto 25px;
-}
-
-.overview-facts h3 {
-    font-size: 0.85rem;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--primary);
-    margin-bottom: 15px;
-}
-
-.overview-facts dl {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 16px;
-}
-
-.fact {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-    background: var(--gray);
-    border-radius: 6px;
-    padding: 10px 16px;
-    border-left: 3px solid var(--primary);
-}
-
-.fact dt {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--primary);
-    white-space: nowrap;
-}
-
-.fact dd { color: #ccc; font-size: 0.85rem; }
-
-@media (max-width: 768px) {
-    .overview-facts dl { flex-direction: column; align-items: stretch; }
-    .fact { flex-direction: column; align-items: flex-start; gap: 4px; }
-}
-
 /* --- SERVICES CARDS (Strict 3-Column Layout) --- */
 .services {
     padding: 80px 5%;
@@ -332,6 +369,98 @@ nav {
 .about-text h2 { margin-bottom: 20px; font-size: 2.5rem; }
 .about-text p { margin-bottom: 20px; color: #ccc; }
 
+/* Company mission-statement pull-quote (used in "Why Choose Bee Happy") */
+.mission-quote {
+    margin-top: 30px;
+    padding: 18px 24px;
+    border-left: 4px solid var(--primary);
+    background: rgba(255, 215, 0, 0.06);
+    border-radius: 4px;
+    font-style: italic;
+    color: var(--light);
+    font-size: 1.05rem;
+}
+
+/* --- OUR PROCESS --- */
+.process {
+    padding: 80px 5%;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.process-step { text-align: center; padding: 10px; position: relative; }
+
+.process-step .step-number {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+}
+
+/* Circle "draws itself" (stroke-dashoffset animates to 0) once the step
+   scrolls into view — see the IntersectionObserver in the page script. */
+.step-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    transform: rotate(-90deg); /* start the draw at 12 o'clock */
+}
+
+.step-circle__track {
+    fill: none;
+    stroke: rgba(255, 215, 0, 0.15);
+    stroke-width: 2;
+}
+
+.step-circle__progress {
+    fill: none;
+    stroke: var(--primary);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 169.6;
+    stroke-dashoffset: 169.6;
+    transition: stroke-dashoffset 1s ease;
+}
+
+.process-step.in-view .step-circle__progress { stroke-dashoffset: 0; }
+
+/* Slight stagger so the four circles draw left-to-right, not all at once */
+.process-step:nth-child(2) .step-circle__progress { transition-delay: 0.15s; }
+.process-step:nth-child(3) .step-circle__progress { transition-delay: 0.3s; }
+.process-step:nth-child(4) .step-circle__progress { transition-delay: 0.45s; }
+
+.step-number__text {
+    position: relative;
+    z-index: 1;
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .step-circle__progress { transition: none; stroke-dashoffset: 0; }
+}
+
+.process-step h3 { font-size: 1.05rem; margin-bottom: 10px; }
+.process-step p { color: #ccc; font-size: 0.9rem; line-height: 1.6; }
+
 .about-image {
     flex: 1;
     min-width: 300px;
@@ -344,16 +473,36 @@ nav {
 /* --- FAQ ACCORDION --- */
 .faq {
     padding: 80px 5%;
-    background: var(--darker);
+    background: var(--dark);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Two topical columns (Construction & Roofing / Windows) on desktop,
+   collapsing to one column on mobile — see the breakpoint below. */
+.accordion-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.accordion-column-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--primary);
+    /* No margin — the parent .accordion's flex `gap` already spaces this
+       from the first item below it, same as between every other item. */
+}
+
 .accordion {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -404,6 +553,44 @@ nav {
 }
 
 .accordion-content p { color: #ccc; padding-bottom: 20px; }
+
+/* --- FEATURED VIDEO --- */
+.video-feature {
+    padding: 100px 5%;
+    background: var(--darker);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 600px) {
+    .video-wrapper { padding: 0 10px; }
+}
 
 /* --- ASYMMETRICAL GALLERY --- */
 /* --- UPDATED GALLERY SECTION --- */
@@ -458,6 +645,8 @@ nav {
 }
 
 .gallery-item:hover img { transform: scale(1.1); }
+
+.gallery-teaser__cta { margin-top: 40px; }
 
 .g-wide { grid-column: span 2; }
 .g-tall { grid-row: span 2; }
@@ -593,19 +782,78 @@ button[type="submit"]:hover { background: #e05e2b; }
 /* --- FOOTER --- */
 footer {
     background: #000;
-    padding: 50px 5% 20px;
+    padding: 70px 5% 30px;
     color: #888;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
     margin-bottom: 40px;
-    gap: 30px;
 }
 
-.footer-col h4 { color: #fff; margin-bottom: 20px; }
+.footer-brand .footer-wordmark {
+    font-family: 'Big Shoulders', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.footer-brand .footer-wordmark span { color: var(--primary); }
+
+.footer-brand p { color: #999; font-size: 0.9rem; line-height: 1.7; max-width: 320px; }
+
+.footer-brand .footer-contact { margin-top: 18px; }
+
+.footer-brand .footer-contact p {
+    color: #bbb;
+    margin-bottom: 8px;
+    max-width: none;
+}
+
+.footer-brand .footer-contact i {
+    color: var(--primary);
+    width: 16px;
+    margin-right: 8px;
+}
+
+.footer-brand .footer-contact a { color: inherit; }
+.footer-brand .footer-contact a:hover { color: var(--primary); }
+
+.footer-col h4 {
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.footer-col ul { display: flex; flex-direction: column; gap: 11px; }
+
+.footer-col ul li a {
+    color: #aaa;
+    font-size: 0.92rem;
+    transition: var(--transition);
+}
+
+.footer-col ul li a:hover { color: var(--primary); }
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid #262626;
+    padding-top: 24px;
+    font-size: 0.85rem;
+}
 
 .social-links a {
     font-size: 1.5rem;
@@ -615,11 +863,14 @@ footer {
 
 .social-links a:hover { color: var(--primary); }
 
-.copyright {
-    text-align: center;
-    border-top: 1px solid #333;
-    padding-top: 20px;
-    font-size: 0.9rem;
+@media (max-width: 900px) {
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 520px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
 }
 
 /* --- RESPONSIVE --- */
@@ -629,6 +880,8 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         max-width: 800px;
     }
+
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* Mobile: Nav collapse, Cards stack 1 across */
@@ -651,6 +904,8 @@ footer {
     .hero-content h1 { font-size: 2.5rem; }
     
     .card-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr; }
+    .accordion-grid { grid-template-columns: 1fr; gap: 30px 0; }
 
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
