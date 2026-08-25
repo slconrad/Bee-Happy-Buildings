@@ -858,6 +858,14 @@ footer {
     font-size: 0.85rem;
 }
 
+.footer-credit {
+    color: #666;
+    margin-left: 6px;
+    transition: var(--transition);
+}
+
+.footer-credit:hover { color: var(--primary); }
+
 .social-links a {
     font-size: 1.5rem;
     margin-right: 15px;
