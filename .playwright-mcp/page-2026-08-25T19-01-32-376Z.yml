@@ -1,0 +1,409 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link [ref=e4] [cursor=pointer]:
+      - /url: "#top"
+      - img "Bee Happy Building Systems" [ref=e5]
+    - text: 
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Services" [ref=e8] [cursor=pointer]:
+          - /url: "#services"
+      - listitem [ref=e9]:
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: "#about"
+      - listitem [ref=e11]:
+        - link "Gallery" [ref=e12] [cursor=pointer]:
+          - /url: gallery/index.html
+      - listitem [ref=e13]:
+        - link "Blog" [ref=e14] [cursor=pointer]:
+          - /url: blog/index.html
+      - listitem [ref=e15]:
+        - link "FAQ" [ref=e16] [cursor=pointer]:
+          - /url: "#faq"
+      - listitem [ref=e17]:
+        - link "Get a Quote" [ref=e18] [cursor=pointer]:
+          - /url: "#contact"
+  - banner [ref=e19]:
+    - generic [ref=e20]: Your browser does not support the video tag.
+    - generic [ref=e21]:
+      - heading "Expertly. Engineered" [level=1] [ref=e22]
+      - paragraph [ref=e23]:
+        - text: The premier metal building contractor
+        - generic [ref=e24]: serving Tyler, Longview, and all of East Texas.
+      - link "Start Your Project" [ref=e25] [cursor=pointer]:
+        - /url: "#contact"
+  - generic [ref=e26]:
+    - heading "What We Build" [level=2] [ref=e28]
+    - generic [ref=e29]:
+      - article [ref=e30]:
+        - generic [ref=e31]: 
+        - heading "Custom Barndominiums" [level=3] [ref=e32]
+        - paragraph [ref=e33]:
+          - text: Combining high-grade steel frames with luxury interiors. Our
+          - strong [ref=e34]: East Texas barndominiums
+          - text: offer energy-efficient, open-concept living at a fraction of the cost of traditional builds.
+      - article [ref=e35]:
+        - generic [ref=e36]: 
+        - heading "Steel Workshops" [level=3] [ref=e37]
+        - paragraph [ref=e38]:
+          - text: Expertly engineered
+          - strong [ref=e39]: metal workshops and hobby shops
+          - text: . Built to withstand Texas winds, our steel structures provide secure, clear-span space for any project.
+      - article [ref=e40]:
+        - generic [ref=e41]: 
+        - heading "Agricultural Barns" [level=3] [ref=e42]
+        - paragraph [ref=e43]:
+          - text: Heavy-duty
+          - strong [ref=e44]: metal farm buildings
+          - text: designed for livestock, hay storage, and equipment. Our rust-resistant steel barns are the backbone of East Texas agriculture.
+      - article [ref=e45]:
+        - generic [ref=e46]: 
+        - heading "Detached Garages" [level=3] [ref=e47]
+        - paragraph [ref=e48]:
+          - text: Premium
+          - strong [ref=e49]: metal garage construction
+          - text: featuring reinforced steel siding. Ideal for vehicle storage, home gyms, or man-caves with custom roll-up door options.
+      - article [ref=e50]:
+        - generic [ref=e51]: 
+        - heading "Commercial Steel" [level=3] [ref=e52]
+        - paragraph [ref=e53]:
+          - text: Scalable
+          - strong [ref=e54]: industrial metal buildings
+          - text: for retail, office space, or manufacturing. Rapid turn-key construction services to get your business up and running faster.
+      - article [ref=e55]:
+        - generic [ref=e56]: 
+        - heading "RV & Boat Covers" [level=3] [ref=e57]
+        - paragraph [ref=e58]:
+          - text: Protect your investments with custom
+          - strong [ref=e59]: steel RV carports
+          - text: and boat covers. Engineered for maximum clearance and superior protection against sun and hail damage.
+  - generic [ref=e62]:
+    - heading "Our Barndos & Sheds" [level=2] [ref=e64]
+    - generic [ref=e65]:
+      - img "50x70x12 w 15ft Wrap around Porch Marchbank Project 1" [ref=e67] [cursor=pointer]
+      - img "Stanley Construction Anderson Project 2" [ref=e69] [cursor=pointer]
+      - img "40x60x16 Shop w Living Quarters 1" [ref=e71] [cursor=pointer]
+      - img "40x40x16 w (2) 20ft Gable Ext. 2" [ref=e73] [cursor=pointer]
+      - img "40x80x24 Stanley Glaze Samples Project 4" [ref=e75] [cursor=pointer]
+    - link "View Full Gallery " [ref=e76] [cursor=pointer]:
+      - /url: gallery/index.html
+      - text: View Full Gallery
+      - generic [ref=e77]: 
+  - generic [ref=e81]:
+    - heading "Family Owned. Texas Built." [level=2] [ref=e82]
+    - paragraph [ref=e83]:
+      - link "Rated 5 stars from 11 reviews on Google — read our reviews" [ref=e84] [cursor=pointer]:
+        - /url: https://share.google/dXk91VAHvaDZv2iZF
+        - generic [ref=e85]:
+          - generic [ref=e86]: 
+          - generic [ref=e87]: 
+          - generic [ref=e88]: 
+          - generic [ref=e89]: 
+          - generic [ref=e90]: 
+        - generic [ref=e91]: 5.0 · 11 Google Reviews
+    - paragraph [ref=e92]: Bee Happy Building Systems is a family owned and operated company based in Tyler, TX, with 20+ years of experience turning barndominium and steel building dreams into reality across Tyler, Longview, and East Texas.
+    - paragraph [ref=e93]: We're with you from design to finish, approaching every project as craftsmen — combining precision, purpose, and quality workmanship that stands the test of time. We stand behind our work, because our reputation is built one satisfied client at a time.
+    - list [ref=e94]:
+      - listitem [ref=e95]:
+        - generic [ref=e96]: 
+        - text: Family Owned & Operated
+      - listitem [ref=e97]:
+        - generic [ref=e98]: 
+        - text: 20+ Years Experience
+      - listitem [ref=e99]:
+        - generic [ref=e100]: 
+        - text: Fully Insured & Bonded
+      - listitem [ref=e101]:
+        - generic [ref=e102]: 
+        - text: Turn-key Concrete & Erection
+    - link "Check out our methods " [ref=e104] [cursor=pointer]:
+      - /url: blog/index.html
+      - text: Check out our methods
+      - generic [ref=e105]: 
+  - generic [ref=e111]:
+    - heading "Why Choose Bee Happy?" [level=2] [ref=e112]
+    - paragraph [ref=e113]: “Our mission is to always deliver the best job possible with a Bee Happy attitude.”
+    - paragraph [ref=e114]: Choosing Bee Happy Building Systems means opting for peace of mind. We specialize in precision-engineered steel kits that drastically reduce construction time compared to traditional lumber builds.
+    - paragraph [ref=e115]: Our structures are built to withstand the humidity and volatile weather of East Texas, featuring anti-corrosion coatings and superior structural integrity that keeps your assets safe for decades.
+    - list [ref=e116]:
+      - listitem [ref=e117]:
+        - generic [ref=e118]: 
+        - strong [ref=e119]: "Locally Owned & Operated:"
+        - text: We are your neighbors in Tyler and Longview.
+      - listitem [ref=e120]:
+        - generic [ref=e121]: 
+        - strong [ref=e122]: "Transparent Pricing:"
+        - text: Detailed quotes with no hidden fees or "surprise" surcharges.
+      - listitem [ref=e123]:
+        - generic [ref=e124]: 
+        - strong [ref=e125]: "Eco-Friendly:"
+        - text: 100% recyclable US-made steel reduces your environmental footprint.
+      - listitem [ref=e126]:
+        - generic [ref=e127]: 
+        - strong [ref=e128]: "Design Flexibility:"
+        - text: From bay spacing to roof pitches, we customize every inch.
+  - generic [ref=e132]:
+    - heading "Our Materials" [level=2] [ref=e133]
+    - paragraph [ref=e134]: "We build every project on one of three proven systems: red iron steel, hybrid steel frame, or post frame construction. Each is fully engineered for East Texas weather and matched to your budget and timeline."
+    - list [ref=e135]:
+      - listitem [ref=e136]:
+        - generic [ref=e137]: 
+        - strong [ref=e138]: "Red Iron Steel:"
+        - text: Heavy-gauge structural steel that spans wide clear areas with zero interior support columns.
+      - listitem [ref=e139]:
+        - generic [ref=e140]: 
+        - strong [ref=e141]: "Hybrid Steel Frame:"
+        - text: Steel columns paired with wood framing for a cost-effective, fully engineered build.
+      - listitem [ref=e142]:
+        - generic [ref=e143]: 
+        - strong [ref=e144]: "Post Frame Construction:"
+        - text: Embedded posts deliver a fast, budget-friendly build ideal for barns and shops.
+  - generic [ref=e148]:
+    - heading "Our Process" [level=2] [ref=e150]
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]: "01"
+        - heading "Design & Consultation" [level=3] [ref=e158]
+        - paragraph [ref=e159]: We start with a conversation about your land, budget, and vision, then help finalize your floor plan, dimensions, and finishes before a single beam goes up.
+      - generic [ref=e160]:
+        - generic [ref=e161]: "02"
+        - heading "Engineering & Permitting" [level=3] [ref=e166]
+        - paragraph [ref=e167]: Every building is designed to Texas wind and structural codes with engineer-stamped plans, and we help you navigate local permitting.
+      - generic [ref=e168]:
+        - generic [ref=e169]: "03"
+        - heading "Site Prep & Foundation" [level=3] [ref=e174]
+        - paragraph [ref=e175]: Turn-key concrete and site work, graded and poured to spec, so your foundation is ready to carry your building for decades.
+      - generic [ref=e176]:
+        - generic [ref=e177]: "04"
+        - heading "Construction & Turn-Key Finish" [level=3] [ref=e182]
+        - paragraph [ref=e183]: Our crews erect the frame, install panels and trim, and complete your finish-out, then walk the finished building with you.
+  - generic [ref=e186]:
+    - heading "FAQ - What You Need to Know" [level=2] [ref=e188]
+    - generic [ref=e189]:
+      - generic [ref=e190]:
+        - heading "Construction & Roofing" [level=3] [ref=e191]
+        - article [ref=e192]:
+          - button "Red Iron, Hybrid Steel & Post Frame — What's the Difference? " [ref=e193] [cursor=pointer]:
+            - generic [ref=e194]: Red Iron, Hybrid Steel & Post Frame — What's the Difference?
+            - generic [ref=e195]: 
+          - paragraph [ref=e196]:
+            - text: We build on three engineered systems.
+            - strong [ref=e197]: Red iron steel
+            - text: is the gold standard for barndominiums and shops — custom structural steel that won't warp, rot, or shrink, with wide open interiors and no load-bearing walls.
+            - strong [ref=e198]: Hybrid steel frame
+            - text: pairs a steel structure with wood-framing flexibility for a more cost-effective build without sacrificing quality.
+            - strong [ref=e199]: Post frame construction
+            - text: is our most budget-friendly, fully engineered option with a fast build timeline, ideal for maximizing size within a budget.
+        - article [ref=e200]:
+          - button "Why Does the Right Fastener (Screw) Matter? " [ref=e201] [cursor=pointer]:
+            - generic [ref=e202]: Why Does the Right Fastener (Screw) Matter?
+            - generic [ref=e203]: 
+          - paragraph [ref=e204]: The fastener is the most exposed, most vulnerable part of any metal roof. A quality roof can last 40-60 years — but only if the screws holding it down last that long too. A cheap screw's washer can crack and its head can rust within a few years, while proper installation with a long-life capped screw avoids the cost of ever re-screwing a roof.
+        - article [ref=e205]:
+          - button "Which Fasteners Do We Use, and How Do We Choose Them? " [ref=e206] [cursor=pointer]:
+            - generic [ref=e207]: Which Fasteners Do We Use, and How Do We Choose Them?
+            - generic [ref=e208]: 
+          - paragraph [ref=e209]: We install Mueller fasteners (Texas-made) matched to each specific job. Our default on any roof built to last is the Long-Life ZAC Screw, a zinc-aluminum capped fastener carrying a lifetime warranty against red-rust corrosion. We also use carbon steel self-drillers for standard panel-to-frame attachment, woodgrip screws for wood purlins and decking, and low-profile pan-head fasteners for standing-seam trim. We never mix cheap screws into a long-life roof, and every exposed head is color-matched to blend into the finished look.
+        - article [ref=e210]:
+          - button "How Does Roof Color Affect Heat and Energy Costs? " [ref=e211] [cursor=pointer]:
+            - generic [ref=e212]: How Does Roof Color Affect Heat and Energy Costs?
+            - generic [ref=e213]: 
+          - paragraph [ref=e214]: Under the Texas sun, identical buildings with different roof colors can see surface temperatures differ by 50-80°F — white/light gray panels run around 110-120°F, while black/dark charcoal can hit 170-180°F. Modern "cool roof" coatings use infrared-reflective pigments that bounce invisible heat back into the sky while still showing a dark color to the eye, so a dark cool-coated roof can run 30-40°F cooler than a standard dark finish. A reflective, light-colored roof can also cut summer cooling costs by roughly 7-15%.
+        - article [ref=e215]:
+          - button "The Science Behind \"Cool Roof\" Coatings " [ref=e216] [cursor=pointer]:
+            - generic [ref=e217]: The Science Behind "Cool Roof" Coatings
+            - generic [ref=e218]: 
+          - paragraph [ref=e219]: Sunlight is roughly 5% UV, 43% visible light, and 52% near-infrared (NIR) — and NIR carries over half the sun's heat while staying invisible to the eye. Cheap dark paint absorbs both the light you see and that invisible heat. Modern "cool" coatings use infrared-reflective pigments that show a dark color to your eye while bouncing that infrared heat back into the sky, with a reflective primer coat underneath catching whatever heat gets through. A dark roof will never be quite as cool as pure white, but modern coatings close the gap enough that color becomes a style choice, not a comfort trade-off.
+        - article [ref=e220]:
+          - button "Signature 200 vs. Signature 300 — Which Roof Coating Is Right for You? " [ref=e221] [cursor=pointer]:
+            - generic [ref=e222]: Signature 200 vs. Signature 300 — Which Roof Coating Is Right for You?
+            - generic [ref=e223]: 
+          - paragraph [ref=e224]:
+            - text: "Both finishes carry the same factory warranty: 30-year colorfastness, 40-year film integrity."
+            - strong [ref=e225]: Signature 200 (SMP)
+            - text: is a high-gloss, economical finish best for white and light colors, though it can fade and "chalk" over 15-20 years.
+            - strong [ref=e226]: Signature 300 (70% Kynar PVDF)
+            - text: is a low-gloss finish that's nearly bulletproof against UV and weather — worth the 15-30% premium for medium-to-dark colors that need to look new decades from now. Bare Galvalume reflects heat well when new but dulls and oxidizes within a few years, so a painted Signature panel outperforms it over the life of the building.
+        - article [ref=e227]:
+          - button "How Do I Choose My Roof Color? " [ref=e228] [cursor=pointer]:
+            - generic [ref=e229]: How Do I Choose My Roof Color?
+            - generic [ref=e230]: 
+          - paragraph [ref=e231]: Going light or white, Signature 200 is a smart, money-saving choice. Going dark, or want it to look new in 30 years, Signature 300 PVDF is worth the investment. Roof color and coating are only part of the equation — proper ventilation and insulation work together with the roof to manage heat.
+      - generic [ref=e232]:
+        - heading "Windows" [level=3] [ref=e233]
+        - article [ref=e234]:
+          - button "What Should I Look for in a Budget-Friendly Window? " [ref=e235] [cursor=pointer]:
+            - generic [ref=e236]: What Should I Look for in a Budget-Friendly Window?
+            - generic [ref=e237]: 
+          - paragraph [ref=e238]: Compare whole-window NFRC numbers, not "center-of-glass" marketing figures. For East Texas, target a U-Factor of 0.28 or below and an SHGC of 0.23 or below, plus a solid DP rating for storm season. Budget options like RELIABILT, Ply Gem, Elevate, and Simonton all use vinyl frames with Low-E + argon glass and land in a similar energy-performance range — the real differences come down to warranty strength, manufacturer backing, and installation quality.
+        - article [ref=e239]:
+          - button "How Do Budget Window Brands Compare? " [ref=e240] [cursor=pointer]:
+            - generic [ref=e241]: How Do Budget Window Brands Compare?
+            - generic [ref=e242]: 
+          - paragraph [ref=e243]:
+            - strong [ref=e244]: RELIABILT
+            - text: (Lowe's, made by Atrium) carries a transferable lifetime vinyl warranty — step up from the entry 3201 series to the 3500/3900 series for a better-built window.
+            - strong [ref=e245]: Ply Gem
+            - text: (Home Depot) spans a wide quality range; its in-stock 500 Series is the weakest option (1-year warranty, 10-year glass), so verify the exact series before buying.
+            - strong [ref=e246]: Elevate
+            - text: is Texas-made and engineered for our climate, blocking over 75% of solar heat with TDI-approved windstorm ratings and a limited lifetime warranty.
+            - strong [ref=e247]: Simonton's
+            - text: Pro-Finish Contractor Series is Consumer Reports' highest-rated vinyl in its class, AAMA Gold certified, with the strongest build quality and brand backing in this tier.
+        - article [ref=e248]:
+          - button "What Premium Window Frame Materials Are Available? " [ref=e249] [cursor=pointer]:
+            - generic [ref=e250]: What Premium Window Frame Materials Are Available?
+            - generic [ref=e251]: 
+          - paragraph [ref=e252]:
+            - strong [ref=e253]: Fiberglass
+            - text: is the premium workhorse — it expands and contracts at nearly the same rate as glass, keeping seals tight, and lasts 40-50+ years, making it the best all-around pick for East Texas heat.
+            - strong [ref=e254]: Fibrex composite
+            - text: (Andersen's proprietary wood-fiber/PVC blend) is about twice as strong as vinyl, heat-stable, and holds dark colors well.
+            - strong [ref=e255]: Clad-wood
+            - text: pairs a real wood interior with a low-maintenance exterior shell for a beautiful, high-end look, though it's the priciest option and the wood still needs occasional upkeep.
+            - strong [ref=e256]: Solid wood
+            - text: is classic and fully customizable but the highest-maintenance choice, and not ideal for Texas heat/humidity without diligent care. At the premium tier, only Pella offers a true vinyl option (250 Series) — a bridge between budget vinyl and full premium.
+        - article [ref=e257]:
+          - button "How Do Premium Window Brands Compare? " [ref=e258] [cursor=pointer]:
+            - generic [ref=e259]: How Do Premium Window Brands Compare?
+            - generic [ref=e260]: 
+          - paragraph [ref=e261]:
+            - strong [ref=e262]: Pella 250 Series
+            - text: (vinyl) is steel-reinforced with up to 18 insulating chambers, hitting a U-factor as low as 0.27 and SHGC as low as 0.21 — great for budget-minded builds that still want a trusted national brand.
+            - strong [ref=e263]: Pella
+            - text: "'s fiberglass and wood lines (Impervia) are tested from -40°F to 180°F and resist warping, offering the widest range of materials under one brand."
+            - strong [ref=e264]: Andersen
+            - text: is built around Fibrex composite with the deepest color customization in the tier (50+ exterior colors on the E-Series) and a warranty that's transferable on upper lines.
+            - strong [ref=e265]: Marvin
+            - text: is a fiberglass specialist built on Ultrex, rated 8x stronger than vinyl, with a fully transferable warranty and the most heat-stable performance for Texas — best for forever homes.
+        - article [ref=e266]:
+          - button "What Are the Best Premium Window Options for East Texas Heat? " [ref=e267] [cursor=pointer]:
+            - generic [ref=e268]: What Are the Best Premium Window Options for East Texas Heat?
+            - generic [ref=e269]: 
+          - paragraph [ref=e270]:
+            - text: Every premium option far outlasts a budget window — the real choice is material and look. Fiberglass (Pella Impervia, Marvin Ultrex) leads on seal performance and holding dark colors in our heat, Andersen's Fibrex composite offers the deepest color customization, and clad-wood is a style upgrade with some added maintenance.
+            - strong [ref=e271]: "Our recommendation:"
+            - text: Marvin for the toughest, most heat-stable build with a fully transferable warranty; Pella Impervia for excellent fiberglass at a friendlier price; Andersen for maximum customization; and Pella's 250 Series for a trusted national brand on a tighter budget.
+  - generic [ref=e274]:
+    - heading "Custom Build Featured on The Barndo Network" [level=2] [ref=e276]
+    - iframe [ref=e279]
+  - generic [ref=e282]:
+    - heading "Get A Quote" [level=2] [ref=e284]
+    - generic [ref=e285]:
+      - generic [ref=e286]:
+        - generic [ref=e287]:
+          - heading " Bee Happy Building Systems" [level=4] [ref=e288]:
+            - generic [ref=e289]: 
+            - text: Bee Happy Building Systems
+          - text: 13368 CR 2290 Arp, Tx 75750
+        - iframe [ref=e290]
+        - link " Get Directions" [ref=e292] [cursor=pointer]:
+          - /url: https://www.google.com/maps/dir/?api=1&destination=13368+CR+2290+Arp+Tx+75750
+          - generic [ref=e293]: 
+          - text: Get Directions
+      - generic [ref=e295]:
+        - generic [ref=e296]:
+          - generic [ref=e297]: Full Name
+          - textbox "Full Name" [ref=e298]:
+            - /placeholder: John Doe
+        - generic [ref=e299]:
+          - generic [ref=e300]: Email Address
+          - textbox "Email Address" [ref=e301]:
+            - /placeholder: john@example.com
+        - generic [ref=e302]:
+          - generic [ref=e303]: Building Type
+          - combobox "Building Type" [ref=e304]:
+            - option "Barndominium" [selected]
+            - option "Shop / Garage"
+            - option "Commercial"
+            - option "Other"
+        - generic [ref=e305]:
+          - generic [ref=e306]: Project Details (Size, Location, etc.)
+          - textbox "Project Details (Size, Location, etc.)" [ref=e307]:
+            - /placeholder: I'm looking for a 40x60 shop in Tyler...
+        - button "Request Free Quote" [ref=e308] [cursor=pointer]
+  - contentinfo [ref=e311]:
+    - generic [ref=e312]:
+      - generic [ref=e313]:
+        - generic [ref=e314]: Bee Happy Building Systems
+        - paragraph [ref=e315]: Family owned and operated metal building contractor serving Tyler, Longview, and East Texas. Barndominiums, steel shops, and agricultural buildings, built to last.
+        - generic [ref=e316]:
+          - paragraph [ref=e317]:
+            - generic [ref=e318]: 
+            - text: 13368 CR 2290, Arp, TX 75750
+          - paragraph [ref=e319]:
+            - generic [ref=e320]: 
+            - link "(903) 522-1565" [ref=e321] [cursor=pointer]:
+              - /url: tel:+19035221565
+          - paragraph [ref=e322]:
+            - generic [ref=e323]: 
+            - link "beehappybuildingsystemsllc@gmail.com" [ref=e324] [cursor=pointer]:
+              - /url: mailto:beehappybuildingsystemsllc@gmail.com
+      - generic [ref=e325]:
+        - heading "Services" [level=4] [ref=e326]
+        - list [ref=e327]:
+          - listitem [ref=e328]:
+            - link "Custom Barndominiums" [ref=e329] [cursor=pointer]:
+              - /url: "#barndominiums"
+          - listitem [ref=e330]:
+            - link "Steel Workshops" [ref=e331] [cursor=pointer]:
+              - /url: "#steel-workshops"
+          - listitem [ref=e332]:
+            - link "Agricultural Barns" [ref=e333] [cursor=pointer]:
+              - /url: "#agricultural-barns"
+          - listitem [ref=e334]:
+            - link "Detached Garages" [ref=e335] [cursor=pointer]:
+              - /url: "#detached-garages"
+          - listitem [ref=e336]:
+            - link "Commercial Steel" [ref=e337] [cursor=pointer]:
+              - /url: "#commercial-steel"
+          - listitem [ref=e338]:
+            - link "RV & Boat Covers" [ref=e339] [cursor=pointer]:
+              - /url: "#rv-boat-covers"
+      - generic [ref=e340]:
+        - heading "Guides" [level=4] [ref=e341]
+        - list [ref=e342]:
+          - listitem [ref=e343]:
+            - link "All Guides" [ref=e344] [cursor=pointer]:
+              - /url: blog/index.html
+          - listitem [ref=e345]:
+            - link "Construction Process" [ref=e346] [cursor=pointer]:
+              - /url: blog/construction-process.html
+          - listitem [ref=e347]:
+            - link "Fastener Guide" [ref=e348] [cursor=pointer]:
+              - /url: blog/fastener-guide.html
+          - listitem [ref=e349]:
+            - link "Roof Color & Coatings" [ref=e350] [cursor=pointer]:
+              - /url: blog/roof-color-coatings-guide.html
+          - listitem [ref=e351]:
+            - link "Premium Windows" [ref=e352] [cursor=pointer]:
+              - /url: blog/premium-windows-guide.html
+          - listitem [ref=e353]:
+            - link "Budget Windows" [ref=e354] [cursor=pointer]:
+              - /url: blog/budget-windows-guide.html
+      - generic [ref=e355]:
+        - heading "Company" [level=4] [ref=e356]
+        - list [ref=e357]:
+          - listitem [ref=e358]:
+            - link "Home" [ref=e359] [cursor=pointer]:
+              - /url: "#top"
+          - listitem [ref=e360]:
+            - link "About" [ref=e361] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e362]:
+            - link "Gallery" [ref=e363] [cursor=pointer]:
+              - /url: gallery/index.html
+          - listitem [ref=e364]:
+            - link "FAQ" [ref=e365] [cursor=pointer]:
+              - /url: "#faq"
+          - listitem [ref=e366]:
+            - link "Get a Quote" [ref=e367] [cursor=pointer]:
+              - /url: "#contact"
+    - generic [ref=e368]:
+      - paragraph [ref=e369]: © 2026 Bee Happy Building Systems. All rights reserved.
+      - generic [ref=e370]:
+        - link "" [ref=e371] [cursor=pointer]:
+          - /url: https://www.facebook.com/beehappybuildingsystemsllc/
+        - link "" [ref=e373] [cursor=pointer]:
+          - /url: "#"
+        - link "" [ref=e375] [cursor=pointer]:
+          - /url: "#"
