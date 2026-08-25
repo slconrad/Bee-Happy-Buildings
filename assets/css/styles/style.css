@@ -139,8 +139,6 @@ nav.nav-scrolled .logo img {
 /* --- SECONDARY (OUTLINE) BUTTON --- */
 /* Smaller, lower-emphasis than .cta-btn — for in-copy links like
    "Check Out Our Methods" rather than primary lead-gen CTAs. */
-/* Wraps the outline button + Google rating badge on one line so adding the
-   rating doesn't add extra vertical space to the section. */
 .about-cta-row {
     display: flex;
     align-items: center;
@@ -184,6 +182,7 @@ nav.nav-scrolled .logo img {
 
 .google-rating__text {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
     font-weight: 600;
     white-space: nowrap;
 }
