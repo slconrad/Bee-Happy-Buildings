@@ -1,13 +1,13 @@
-# Bee Happy Building Systems
+# Bee Happy Building Systems LLC
 
-> Bee Happy Building Systems is a family owned and operated metal building
-> contractor based in the Tyler/Arp, Texas area, serving Tyler, Longview, and
+> Bee Happy Building Systems LLC is a family owned and operated metal building
+> contractor based in the Tyler, Texas area, serving Tyler, Longview, and
 > the greater East Texas region. The company designs and constructs
 > barndominiums, steel workshops, agricultural barns, detached garages,
 > commercial steel buildings, and RV/boat covers using 100% US-made steel,
 > and is fully insured and bonded with 20+ years of experience.
 
-Bee Happy Building Systems builds on three engineered systems, matched to a
+Bee Happy Building Systems LLC builds on three engineered systems, matched to a
 client's budget and timeline: red iron steel (heavy-gauge structural steel
 spanning wide clear areas with zero interior support columns), hybrid steel
 frame (steel columns paired with wood framing for a cost-effective, fully
@@ -18,18 +18,19 @@ certifications before final shipment.]
 
 ## Company
 
-- Name: Bee Happy Building Systems
+- Name: Bee Happy Building Systems LLC
 - Ownership: Family owned and operated
-- Address: 13368 CR 2290, Arp, TX 75750
-- Service Area: Tyler, Longview, and East Texas
+- Service Area: Tyler, Longview, and East Texas (service-area business; no public street address)
 - Experience: 20+ years
 - Materials: 100% US-made steel
 - Insurance/Bonding: Fully insured and bonded
 - Phone: (903) 522-1565
 - Email: beehappybuildingsystemsllc@gmail.com
 - Facebook: https://www.facebook.com/beehappybuildingsystemsllc/
-- Also on: Instagram, TikTok, YouTube [PLACEHOLDER — confirm handles/URLs]
-- Google Rating: 5.0 stars (11 reviews) — https://share.google/dXk91VAHvaDZv2iZF
+- Instagram: https://www.instagram.com/beehappybuildingsystemsllc/
+- Google Rating: 5.0 stars (11 reviews) — https://share.google/iWtWz3NK9JSE12oRt
+- Google Business Profile: https://maps.google.com/?cid=10668719405787475213
+- Hours: Monday–Friday 7 AM–4 PM; Saturday–Sunday closed
 
 ## Services
 
@@ -74,7 +75,8 @@ Structured data (Organization, FAQPage, BreadcrumbList, WebSite) is also
 published in JSON-LD on the homepage — this file is a plain-text companion
 for LLM/AI-answer-engine crawlers per the llms.txt convention
 (llmstxt.org), not a replacement for it. The phone number was confirmed
-from the client's own Mission Statement doc on 2026-08-24. One fact is
-still marked [PLACEHOLDER] pending client confirmation: the email address
-(see SITE-NOTES.md). All other facts above are drawn from live, published
-site content or the client's official company docs.
+from the client's own Mission Statement doc on 2026-08-24, the email on
+2026-08-25, and hours/rating against the Google Business Profile on
+2026-09-25. Items still marked [PLACEHOLDER] above are pending client
+confirmation (see SITE-NOTES.md). All other facts are drawn from live,
+published site content or the client's official company docs.
