@@ -800,6 +800,12 @@ button[type="submit"]:disabled { opacity: 0.7; cursor: wait; }
 .form-status { margin-top: 15px; font-size: 0.95rem; line-height: 1.5; min-height: 1.5em; }
 .form-status.is-success { color: var(--primary); }
 .form-status.is-error { color: #ff8a80; }
+/* Phones: the hCaptcha widget is a fixed ~302px wide, which overflowed the form
+   panel (only ~231px of inner width at 390px with 40px padding + wrapper padding). */
+@media (max-width: 600px) {
+    .contact-wrapper { padding: 0; }
+    .form-container { padding: 24px 20px; }
+}
 
 /* --- CONTACT LAYOUT --- */
 .contact-wrapper {

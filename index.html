@@ -735,6 +735,8 @@
                     <label for="quote-details">Project Details (Size, Location, etc.)</label>
                     <textarea id="quote-details" name="project_details" rows="4" placeholder="I'm looking for a 40x60 shop in Tyler..."></textarea>
                 </div>
+                <!-- hCaptcha via Web3Forms (free plan, Web3Forms' own sitekey — no setup) -->
+                <div class="h-captcha" data-captcha="true" data-theme="dark"></div>
                 <button type="submit">Request Free Quote</button>
                 <p id="quote-status" class="form-status" role="status" aria-live="polite"></p>
             </form>
@@ -807,6 +809,12 @@
 // page and gets a clear success/error message. Without JS the form still posts
 // normally (Web3Forms shows its own confirmation page).
 (function () {
+    // Very narrow phones: use hCaptcha's compact widget (~164px) instead of the
+    // normal ~302px one. Runs before the async Web3Forms script renders it.
+    const captchaBox = document.querySelector('#quote-form .h-captcha');
+    if (captchaBox && window.innerWidth < 400) captchaBox.setAttribute('data-size', 'compact');
+})();
+(function () {
     const form = document.getElementById('quote-form');
     if (!form || !window.fetch) return;
     const status = document.getElementById('quote-status');
@@ -814,6 +822,12 @@
     const buttonText = button.textContent;
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
+        const captcha = form.querySelector('textarea[name="h-captcha-response"]');
+        if (captcha && !captcha.value) {
+            status.className = 'form-status is-error';
+            status.textContent = 'Please complete the "I am human" check above the button.';
+            return;
+        }
         button.disabled = true;
         button.textContent = 'Sending…';
         status.className = 'form-status';
@@ -835,6 +849,8 @@
         } finally {
             button.disabled = false;
             button.textContent = buttonText;
+            // hCaptcha tokens are single-use: reset so a retry gets a fresh one.
+            if (window.hcaptcha) { try { window.hcaptcha.reset(); } catch (e) {} }
         }
     });
 })();
@@ -932,5 +948,7 @@ function closeLightbox() {
     document.body.style.overflow = 'auto'; 
 }
     </script>
+    <!-- Web3Forms client script: renders the hCaptcha widget in #quote-form -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
