@@ -772,9 +772,29 @@ nav.nav-scrolled .logo img {
     border: 1px solid #555;
     color: #fff;
     border-radius: 4px;
+    /* Form controls don't inherit the page font by default (browsers use ~13px
+       system text). 16px also stops iOS Safari from zooming in on focus. */
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-.form-group input:focus, .form-group textarea:focus {
+.form-group input::placeholder, .form-group textarea::placeholder { color: #999; }
+
+/* Native macOS/iOS selects ignore padding, so the dropdown rendered short and
+   small next to the text inputs; draw it ourselves to match their size. */
+.form-group select {
+    -webkit-appearance: none;
+    appearance: none;
+    padding-right: 40px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23FFD700' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+.form-group select option { color: #000; }
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
 }
@@ -797,6 +817,7 @@ button[type="submit"]:hover { background: #e05e2b; }
 button[type="submit"]:disabled { opacity: 0.7; cursor: wait; }
 /* Quote form: hidden spam trap (bots fill it, people never see it) + status line */
 .form-honeypot { display: none !important; }
+.h-captcha { margin-bottom: 16px; }
 .form-status { margin-top: 15px; font-size: 0.95rem; line-height: 1.5; min-height: 1.5em; }
 .form-status.is-success { color: var(--primary); }
 .form-status.is-error { color: #ff8a80; }
