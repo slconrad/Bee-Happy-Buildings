@@ -707,8 +707,13 @@
     </div>
 </div>
         <div class="form-container">
-            <!-- TODO: form has no action/method/backend wired up yet — see SITE-NOTES.md -->
-            <form>
+            <!-- Delivered by Web3Forms to the business Gmail. The access key is
+                 public by design: it can only send to the registered inbox. -->
+            <form id="quote-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6efd13fe-49a0-4191-9a85-66502edfe358">
+                <input type="hidden" name="subject" value="New quote request from beehappybuildingsystemsllc.com">
+                <input type="hidden" name="from_name" value="Bee Happy Building Systems website">
+                <input type="checkbox" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                 <div class="form-group">
                     <label for="quote-name">Full Name</label>
                     <input type="text" id="quote-name" name="full_name" placeholder="John Doe" required>
@@ -731,6 +736,7 @@
                     <textarea id="quote-details" name="project_details" rows="4" placeholder="I'm looking for a 40x60 shop in Tyler..."></textarea>
                 </div>
                 <button type="submit">Request Free Quote</button>
+                <p id="quote-status" class="form-status" role="status" aria-live="polite"></p>
             </form>
         </div>
         </div>
@@ -796,6 +802,43 @@
         </div>
     </footer>
 
+    <script>
+// Quote form: send to Web3Forms in the background so the visitor stays on the
+// page and gets a clear success/error message. Without JS the form still posts
+// normally (Web3Forms shows its own confirmation page).
+(function () {
+    const form = document.getElementById('quote-form');
+    if (!form || !window.fetch) return;
+    const status = document.getElementById('quote-status');
+    const button = form.querySelector('button[type="submit"]');
+    const buttonText = button.textContent;
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        button.disabled = true;
+        button.textContent = 'Sending…';
+        status.className = 'form-status';
+        status.textContent = '';
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form)
+            });
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok || !result.success) throw new Error(result.message || response.status);
+            form.reset();
+            status.classList.add('is-success');
+            status.textContent = "Thanks! Your quote request was sent. We'll be in touch soon — or call (903) 522-1565 if you'd like to talk now.";
+        } catch (error) {
+            status.classList.add('is-error');
+            status.textContent = "Sorry, your request didn't go through. Please try again, or call us at (903) 522-1565.";
+        } finally {
+            button.disabled = false;
+            button.textContent = buttonText;
+        }
+    });
+})();
+    </script>
     <script>
 // Function to toggle the menu (Hamburger click)
 function toggleMenu() {

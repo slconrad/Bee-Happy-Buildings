@@ -794,6 +794,12 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover { background: #e05e2b; }
+button[type="submit"]:disabled { opacity: 0.7; cursor: wait; }
+/* Quote form: hidden spam trap (bots fill it, people never see it) + status line */
+.form-honeypot { display: none !important; }
+.form-status { margin-top: 15px; font-size: 0.95rem; line-height: 1.5; min-height: 1.5em; }
+.form-status.is-success { color: var(--primary); }
+.form-status.is-error { color: #ff8a80; }
 
 /* --- CONTACT LAYOUT --- */
 .contact-wrapper {
