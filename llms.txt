@@ -63,11 +63,11 @@ The site's FAQ section (https://beehappybuildingsystemsllc.com/#faq) covers, in 
 - [Home](https://beehappybuildingsystemsllc.com/): Company overview, services, gallery preview, FAQ, and quote request form.
 - [Gallery](https://beehappybuildingsystemsllc.com/gallery/): Photos of completed projects, organized into Barndos and Sheds.
 - [Blog](https://beehappybuildingsystemsllc.com/blog/): Buyer's guides on construction systems, fasteners, roof coatings, and windows.
-- [Red Iron, Hybrid Steel & Post Frame: Choosing Your Construction Process](https://beehappybuildingsystemsllc.com/blog/construction-process.html): How the three construction systems Bee Happy builds on compare, and how to choose.
-- [Metal Roof & Building Fasteners: A Straight-Talk Guide](https://beehappybuildingsystemsllc.com/blog/fastener-guide.html): The four roofing/building fasteners Bee Happy installs, what each is for, and why fastener choice affects roof lifespan.
-- [Beat the Texas Heat: A Guide to Metal Roof Color & Coatings](https://beehappybuildingsystemsllc.com/blog/roof-color-coatings-guide.html): How roof color and coating (Signature 200 SMP vs. Signature 300 PVDF, and bare Galvalume) affect heat gain and energy costs in East Texas.
-- [Premium Windows Compared: Pella vs. Andersen vs. Marvin](https://beehappybuildingsystemsllc.com/blog/premium-windows-guide.html): Materials, finishes, pricing, and warranty comparison of premium window brands for East Texas heat.
-- [Budget & In-Stock Windows Compared](https://beehappybuildingsystemsllc.com/blog/budget-windows-guide.html): How RELIABILT, Ply Gem, Elevate, and Simonton budget vinyl windows compare on U-Factor, SHGC, DP rating, and warranty.
+- [Red Iron, Hybrid Steel & Post Frame: Choosing Your Construction Process](https://beehappybuildingsystemsllc.com/blog/construction-process): How the three construction systems Bee Happy builds on compare, and how to choose.
+- [Metal Roof & Building Fasteners: A Straight-Talk Guide](https://beehappybuildingsystemsllc.com/blog/fastener-guide): The four roofing/building fasteners Bee Happy installs, what each is for, and why fastener choice affects roof lifespan.
+- [Beat the Texas Heat: A Guide to Metal Roof Color & Coatings](https://beehappybuildingsystemsllc.com/blog/roof-color-coatings-guide): How roof color and coating (Signature 200 SMP vs. Signature 300 PVDF, and bare Galvalume) affect heat gain and energy costs in East Texas.
+- [Premium Windows Compared: Pella vs. Andersen vs. Marvin](https://beehappybuildingsystemsllc.com/blog/premium-windows-guide): Materials, finishes, pricing, and warranty comparison of premium window brands for East Texas heat.
+- [Budget & In-Stock Windows Compared](https://beehappybuildingsystemsllc.com/blog/budget-windows-guide): How RELIABILT, Ply Gem, Elevate, and Simonton budget vinyl windows compare on U-Factor, SHGC, DP rating, and warranty.
 
 ## Notes
 
